@@ -1,1 +1,3 @@
-```npm install @googlemaps/js-api-loader```
+```
+npm install @googlemaps/js-api-loader
+```

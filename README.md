@@ -14,3 +14,21 @@ const markerPositions = [
   { lat: 37.5435494, lng: 127.0189517, title: '옥수현대아파트' }
 ];
 ```
+
+### 일단은 Polyline까지 적용
+
+### new google 은 에러나서 꼼수
+```
+declare global {
+  interface Window {
+    google: any;
+    initMap: () => void;
+  }
+}
+
+ const map = new window.google.maps.Map(mapRef.current, {
+          center,
+          zoom: 15,
+        });
+
+```
